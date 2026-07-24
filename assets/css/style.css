@@ -1175,3 +1175,89 @@ html{
     transform:translateY(-5px);
 
 }
+/* =========================
+   FOOTER MOBILE FIX
+========================= */
+
+@media (max-width:768px){
+
+.footer-grid{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:35px;
+
+}
+
+.footer-col{
+
+    width:100%;
+    max-width:320px;
+
+}
+
+.footer-logo{
+
+    display:block;
+    margin:0 auto 20px;
+
+}
+
+.footer-col ul{
+
+    padding:0;
+    margin:0;
+
+}
+
+.footer-col li{
+
+    list-style:none;
+    margin:10px 0;
+
+}
+
+.footer-social{
+
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+
+}
+
+.footer-bottom{
+
+    text-align:center;
+    padding:20px 15px;
+    font-size:14px;
+
+}
+
+}
+@media(max-width:768px){
+
+.back-to-top{
+
+    right:15px;
+    bottom:165px;
+
+}
+
+.call-btn{
+
+    right:15px;
+    bottom:90px;
+
+}
+
+.whatsapp-btn{
+
+    right:15px;
+    bottom:20px;
+
+}
+
+}
