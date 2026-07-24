@@ -6,26 +6,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Trident Multi-Management Private Limited</title>
+   <title>Trident Multi-Management Pvt. Ltd. | Security, Facility & Technical Services</title>
 
     <meta name="description"
         content="Professional Security Services, Integrated Facility Management and Food Services across India.">
 
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    rel="stylesheet">
 
 </head>
+
+<!-- Floating Contact Buttons -->
+
+<div class="floating-buttons">
+
+    <a href="tel:+919755040808" class="floating-btn call-btn">
+        <span class="floating-text">Call Now</span>
+        <i class="fas fa-phone-alt"></i>
+    </a>
+
+    <a href="https://wa.me/919755040808"
+       target="_blank"
+       class="floating-btn whatsapp-btn">
+
+        <span class="floating-text">Chat with us</span>
+        <i class="fab fa-whatsapp"></i>
+
+    </a>
+
+</div>
+
+<!-- Back To Top Button -->
+
+<button id="backToTop">
+
+    <i class="fas fa-arrow-up"></i>
+
+</button>
+
+<script src="assets/js/script.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+    duration:900,
+    once:true,
+    offset:100
+});
+</script>
+
+</body>
 
 <body>
 
     <!-- HEADER -->
 
-    <header>
+    <header class="header">
 
         <div class="container">
 
@@ -62,7 +111,7 @@
 
         <div class="container hero-grid">
 
-            <div class="hero-content">
+            <div class="hero-content" data-aos="fade-right">
 
                 <h5>
                     TRIDENT MULTI-MANAGEMENT PVT. LTD.
@@ -127,12 +176,12 @@
 
             <div class="about-image">
 
-                <img src="assets/images/logo.png"
-                    alt="About Trident">
+                <img src="assets/images/about-image.jpg" alt="Trident Multi-Management" class="about-image">
 
             </div>
+           
 
-            <div class="about-content">
+            <div class="about-content" data-aos="fade-up">
 
                 <h5>ABOUT US</h5>
 
@@ -207,6 +256,7 @@
             </div>
 
         </div>
+         
 
     </section>
 
@@ -223,50 +273,111 @@
             <h2>Complete Business Support Solutions</h2>
 
             <p>
-                We provide reliable manpower and management solutions tailored to meet the
-                operational needs of businesses across multiple industries.
+                We provide reliable manpower and management solutions tailored to
+                meet the operational needs of businesses across multiple industries.
             </p>
 
         </div>
 
-        <div class="service-grid">
+        <div class="services-grid">
 
-            <div class="service-card">
+            <!-- Security -->
+
+            <div class="service-card" data-aos="zoom-in">
 
                 <img src="assets/images/security.jpg" alt="Security Services">
 
-                <h3>Security Services</h3>
+                <div class="service-content">
 
-                <p>
-                    Professional security guards, industrial security, corporate security,
-                    residential security and event security services.
-                </p>
+                    <h3>Security Services</h3>
+
+                    <p>
+                        Professional security guards, industrial security,
+                        corporate security, residential security and event
+                        security services.
+                    </p>
+
+                    <a href="#contact" class="service-btn">
+    Learn More →
+</a>
+
+                </div>
 
             </div>
 
-            <div class="service-card">
+            <!-- Facility -->
+
+            <div class="service-card" data-aos="zoom-in">
 
                 <img src="assets/images/facility.jpg" alt="Facility Management">
 
-                <h3>Facility Management</h3>
+                <div class="service-content">
 
-                <p>
-                    Housekeeping, technical manpower, electrical maintenance, plumbing,
-                    landscaping and complete facility solutions.
-                </p>
+                    <h3>Facility Management</h3>
+
+                    <p>
+                        Housekeeping, technical manpower,
+                        electrical maintenance,
+                        plumbing, landscaping and complete
+                        facility management solutions.
+                    </p>
+
+                    <a href="#contact" class="service-btn">
+    Learn More →
+</a>
+
+                </div>
 
             </div>
 
-            <div class="service-card">
+            <!-- Food -->
+
+            <div class="service-card" data-aos="zoom-in">
 
                 <img src="assets/images/food.jpg" alt="Food Services">
 
-                <h3>Food Services</h3>
+                <div class="service-content">
 
-                <p>
-                    Corporate cafeteria, industrial canteen, pantry management and hospitality
-                    support services.
-                </p>
+                    <h3>Food Services</h3>
+
+                    <p>
+                        Corporate cafeteria,
+                        industrial canteen,
+                        pantry management and
+                        hospitality support services.
+                    </p>
+
+                    <a href="#contact" class="service-btn">
+    Learn More →
+</a>
+
+                </div>
+
+            </div>
+
+            <!-- Technical -->
+
+            <div class="service-card" data-aos="zoom-in">
+
+                <img src="assets/images/technical-services.jpg" alt="Technical Services">
+
+                <div class="service-content">
+
+                    <h3>Technical Services</h3>
+
+                    <p>
+                        HVAC maintenance,
+                        electrical support,
+                        plumbing,
+                        mechanical maintenance and
+                        engineering assistance.
+                    </p>
+
+                    <a href="#contact" class="service-btn">
+    Learn More →
+</a>
+
+                </div>
 
             </div>
 
@@ -275,9 +386,10 @@
     </div>
 
 </section>
+
 <!-- WHY CHOOSE US -->
 
-<section class="why-us">
+<section class="why-choose">
 
     <div class="container">
 
@@ -288,46 +400,46 @@
             <h2>Why Businesses Trust Trident</h2>
 
             <p>
-                We combine industry expertise with professional manpower and
-                customer-focused service delivery.
+                We combine industry expertise with professional manpower,
+                customer-focused service and operational excellence.
             </p>
 
         </div>
 
         <div class="why-grid">
 
-            <div class="why-card">
-                <div class="icon">🛡️</div>
+            <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fa-solid fa-shield-halved"></i>
                 <h3>Professional Security</h3>
-                <p>Well-trained and disciplined security personnel.</p>
+                <p>Well-trained and disciplined security personnel for every industry.</p>
             </div>
 
-            <div class="why-card">
-                <div class="icon">🏢</div>
+            <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fa-solid fa-building"></i>
                 <h3>Facility Experts</h3>
-                <p>Complete housekeeping and facility management solutions.</p>
+                <p>Complete facility management and technical support solutions.</p>
             </div>
 
-            <div class="why-card">
-                <div class="icon">👨‍🍳</div>
-                <h3>Food Services</h3>
-                <p>Quality cafeteria, pantry and hospitality support.</p>
+            <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fa-solid fa-utensils"></i>
+                <h3>Quality Food Services</h3>
+                <p>Corporate cafeteria, pantry and hospitality management.</p>
             </div>
 
-            <div class="why-card">
-                <div class="icon">⏰</div>
+            <div class="why-card" data-aos="fade-up" data-aos-delay="400">
+                <i class="fa-solid fa-headset"></i>
                 <h3>24×7 Support</h3>
                 <p>Quick response with dedicated operational assistance.</p>
             </div>
 
-            <div class="why-card">
-                <div class="icon">🤝</div>
+           <div class="why-card" data-aos="fade-up" data-aos-delay="500">
+                <i class="fa-solid fa-users"></i>
                 <h3>Reliable Team</h3>
-                <p>Experienced HR and Operations professionals.</p>
+                <p>Experienced HR and operations professionals.</p>
             </div>
 
-            <div class="why-card">
-                <div class="icon">⭐</div>
+           <div class="why-card" data-aos="fade-up" data-aos-delay="600">
+                <i class="fa-solid fa-award"></i>
                 <h3>Customer Satisfaction</h3>
                 <p>Focused on quality, trust and long-term partnerships.</p>
             </div>
@@ -350,8 +462,8 @@
             <h2>Serving Diverse Industries Across India</h2>
 
             <p>
-                Our trained workforce and professional management support organizations
-                from various industries with reliable manpower solutions.
+                Our experienced workforce supports organizations across multiple
+                industries with reliable manpower and facility management solutions.
             </p>
 
         </div>
@@ -359,43 +471,43 @@
         <div class="industry-grid">
 
             <div class="industry-card">
-                <span>🏭</span>
-                <h3>Manufacturing</h3>
-            </div>
-
-            <div class="industry-card">
-                <span>🏢</span>
+                <i class="fa-solid fa-building"></i>
                 <h3>Corporate Offices</h3>
             </div>
 
             <div class="industry-card">
-                <span>🏥</span>
+                <i class="fa-solid fa-hospital"></i>
                 <h3>Hospitals</h3>
             </div>
 
             <div class="industry-card">
-                <span>🏫</span>
+                <i class="fa-solid fa-school"></i>
                 <h3>Schools & Colleges</h3>
             </div>
 
             <div class="industry-card">
-                <span>🏨</span>
+                <i class="fa-solid fa-hotel"></i>
                 <h3>Hotels</h3>
             </div>
 
             <div class="industry-card">
-                <span>🛍️</span>
-                <h3>Malls & Retail</h3>
+                <i class="fa-solid fa-store"></i>
+                <h3>Shopping Malls</h3>
             </div>
 
             <div class="industry-card">
-                <span>🏗️</span>
-                <h3>Construction Sites</h3>
+                <i class="fa-solid fa-city"></i>
+                <h3>Commercial Buildings</h3>
             </div>
 
             <div class="industry-card">
-                <span>🚚</span>
+                <i class="fa-solid fa-warehouse"></i>
                 <h3>Warehouses</h3>
+            </div>
+
+            <div class="industry-card">
+                <i class="fa-solid fa-house"></i>
+                <h3>Residential Societies</h3>
             </div>
 
         </div>
@@ -404,8 +516,191 @@
 
 </section>
 
-    <script src="assets/js/script.js"></script>
+<!-- CONTACT -->
 
-</body>
+<section class="contact" id="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h5>CONTACT US</h5>
+
+            <h2>Let's Discuss Your Requirements</h2>
+
+            <p>
+                Contact Trident Multi-Management Pvt. Ltd. for Security Services,
+                Facility Management, Technical Services and Food Services.
+            </p>
+
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-info">
+
+                <div class="contact-box">
+                    <i class="fas fa-phone-alt"></i>
+                    <div>
+                        <h3>Call Us</h3>
+                        <a href="tel:+919755040808">+91 97550 40808</a>
+                    </div>
+                </div>
+
+                <div class="contact-box">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <a href="mailto:info@tridentmanagement.in">
+                            info@tridentmanagement.in
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Office Address</h3>
+                        <p>
+                            Bhopal, Madhya Pradesh, India
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-box">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Working Hours</h3>
+                        <p>Mon – Sat : 9:00 AM – 6:00 PM</p>
+                    </div>
+                </div>
+
+            </div>
+
+        <form class="contact-form" action="https://formsubmit.co/tridentmultimanagement@gmail.com" method="POST">
+
+    <!-- Hidden Fields -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_subject" value="New Enquiry from Trident Website">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://YOUR-GITHUB-URL/thankyou.html">
+
+    <input type="text" name="name" placeholder="Full Name" required>
+
+    <input type="tel" name="phone" placeholder="Phone Number" required>
+
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <select name="service" required>
+        <option value="">Select Service</option>
+        <option>Security Services</option>
+        <option>Facility Management</option>
+        <option>Technical Services</option>
+        <option>Food Services</option>
+    </select>
+
+    <textarea name="message" placeholder="Your Message" required></textarea>
+
+    <button type="submit" class="primary-btn">
+        Send Enquiry
+    </button>
+
+</form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-col">
+
+            <img src="assets/images/logo.png" alt="Trident Logo" class="footer-logo">
+
+            <p>
+                Trident Multi-Management Pvt. Ltd. provides professional Security Services,
+                Facility Management, Technical Services and Food Services across India.
+            </p>
+<div class="footer-social">
+
+    <a href="https://www.linkedin.com/company/trident-multi-management-private-limited-tmmpl/about/?viewAsMember=true" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+    </a>
+
+    <a href="https://www.facebook.com/share/18iFb3y87b/?mibextid=wwXIfr" target="_blank" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+    </a>
+
+    <a href="https://wa.me/919755040808" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="mailto:info@tridentmanagement.in" title="Email">
+        <i class="fas fa-envelope"></i>
+    </a>
+
+</div>
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Our Services</h3>
+
+            <ul>
+
+                <li>Security Services</li>
+                <li>Facility Management</li>
+                <li>Technical Services</li>
+                <li>Food Services</li>
+
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Contact Info</h3>
+
+            <p><strong>Phone:</strong><br>+91 97550 40808</p>
+
+            <p><strong>Email:</strong><br>info@tridentmanagement.in</p>
+
+            <p><strong>Location:</strong><br>Bhopal, Madhya Pradesh</p>
+
+        </div>
+
+    </div>
+   
+</div>
+
+    <div class="footer-bottom">
+
+        © 2026 Trident Multi-Management Private Limited. All Rights Reserved.
+
+    </div>
+
+</footer>
+
 
 </html>
