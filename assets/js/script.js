@@ -1,42 +1,36 @@
-// Sticky Header Shadow
+// Sticky Header Shadow + Back To Top
 
-window.addEventListener("scroll", function () {
-
+document.addEventListener("DOMContentLoaded", function () {
     const header = document.querySelector(".header");
+    const backToTop = document.getElementById("backToTop");
 
-    if (window.scrollY > 50) {
-        header.classList.add("scrolled");
-    } else {
-        header.classList.remove("scrolled");
+    function handleScroll() {
+        if (header) {
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        }
+
+        if (backToTop) {
+            if (window.scrollY > 300) {
+                backToTop.style.display = "block";
+            } else {
+                backToTop.style.display = "none";
+            }
+        }
     }
 
-});
-// Back To Top
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
 
-const backToTop = document.getElementById("backToTop");
-
-window.addEventListener("scroll", function () {
-
-    if(window.scrollY > 300){
-
-        backToTop.style.display = "block";
-
-    }else{
-
-        backToTop.style.display = "none";
-
+    if (backToTop) {
+        backToTop.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
     }
-
-});
-
-backToTop.addEventListener("click", function(){
-
-    window.scrollTo({
-
-        top:0,
-
-        behavior:"smooth"
-
-    });
-
 });
