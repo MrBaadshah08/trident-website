@@ -41,41 +41,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "@id": "https://tridentmanagement.in/#organization",
-  "name": "Trident Multi-Management Private Limited",
-  "alternateName": "Trident Multi-Management Pvt. Ltd.",
-  "url": "https://tridentmanagement.in/",
-  "logo": "https://tridentmanagement.in/assets/images/logo.png",
-  "image": "https://tridentmanagement.in/assets/images/logo.png",
-  "description": "Trident Multi-Management Private Limited provides Security Services, Integrated Facility Management, Technical Services, and Food Services across India.",
-  "telephone": "+91 97550 40808",
-  "email": "info@tridentmanagement.in",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "",
-    "addressLocality": "Kolkata",
-    "addressRegion": "West Bengal",
-    "postalCode": "",
-    "addressCountry": "IN"
-  },
-  "contactPoint": [
     {
-      "@type": "ContactPoint",
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://tridentmanagement.in/#organization",
+      "name": "Trident Multi-Management Private Limited",
+      "alternateName": "Trident Multi-Management Pvt. Ltd.",
+      "url": "https://tridentmanagement.in/",
+      "logo": "https://tridentmanagement.in/assets/images/logo.png",
+      "image": "https://tridentmanagement.in/assets/images/logo.png",
+      "description": "Trident Multi-Management Private Limited provides Security Services, Integrated Facility Management, Technical Services, and Food Services across India.",
       "telephone": "+91 97550 40808",
-      "contactType": "customer support",
-      "areaServed": "IN",
-      "availableLanguage": ["en", "hi"]
+      "email": "info@tridentmanagement.in",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressLocality": "Kolkata",
+        "addressRegion": "West Bengal",
+        "postalCode": "",
+        "addressCountry": "IN"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+91 97550 40808",
+          "contactType": "customer support",
+          "areaServed": "IN",
+          "availableLanguage": ["en", "hi"]
+        }
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/company/trident-multi-management-private-limited-tmmpl/about/?viewAsMember=true",
+        "https://www.facebook.com/share/18iFb3y87b/?mibextid=wwXIfr"
+      ]
     }
-  ],
-  "sameAs": [
-    "https://www.linkedin.com/company/trident-multi-management-private-limited-tmmpl/about/?viewAsMember=true",
-    "https://www.facebook.com/share/18iFb3y87b/?mibextid=wwXIfr"
-  ]
-}
-</script>
+    </script>
 </head>
 
 <body>
@@ -87,7 +87,7 @@
             <i class="fas fa-phone-alt"></i>
         </a>
 
-        <a href="https://wa.me/919755040808" target="_blank" class="floating-btn whatsapp-btn">
+        <a href="https://wa.me/919755040808" target="_blank" class="floating-btn whatsapp-btn" rel="noopener noreferrer">
             <span class="floating-text">Chat with us</span>
             <i class="fab fa-whatsapp"></i>
         </a>
@@ -102,11 +102,9 @@
     <header class="header">
         <div class="container">
             <nav>
-                <a href="#" class="logo" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
-                    <img src="assets/images/logo.png" alt="Trident Logo" style="height:52px;width:auto;display:block;" />
-                    <span style="font-weight:700;letter-spacing:.5px;color:inherit;">
-                        TRIDENT MULTI-MANAGEMENT PVT. LTD.
-                    </span>
+                <a href="#" class="logo" aria-label="Trident Multi-Management Home">
+                    <img src="assets/images/logo.png" alt="Trident Logo" />
+                    <span>TRIDENT MULTI-MANAGEMENT PVT. LTD.</span>
                 </a>
 
                 <ul>
@@ -127,9 +125,7 @@
     <section class="hero">
         <div class="container hero-grid">
             <div class="hero-content" data-aos="fade-right">
-                <h5>
-                    TRIDENT MULTI-MANAGEMENT PVT. LTD.
-                </h5>
+                <h5>TRIDENT MULTI-MANAGEMENT PVT. LTD.</h5>
 
                 <h1>
                     Professional Security,<br />
@@ -143,7 +139,7 @@
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="https://wa.me/919755040808" class="primary-btn">
+                    <a href="https://wa.me/919755040808" class="primary-btn" target="_blank" rel="noopener noreferrer">
                         Free Consultation
                     </a>
 
@@ -153,9 +149,8 @@
                 </div>
             </div>
 
-            <!-- HERO IMAGE -->
             <div class="hero-image">
-                <img src="assets/images/hero.jpg" alt="Professional Security Services" />
+                <img src="assets/images/hero-temp.jpg" alt="Trident Multi-Management Pvt. Ltd.">
             </div>
         </div>
     </section>
@@ -215,7 +210,6 @@
             </div>
 
             <div class="services-grid">
-                <!-- Security -->
                 <div class="service-card" data-aos="zoom-in">
                     <img src="assets/images/security.jpg" alt="Security Services" />
                     <div class="service-content">
@@ -227,7 +221,6 @@
                     </div>
                 </div>
 
-                <!-- Facility -->
                 <div class="service-card" data-aos="zoom-in">
                     <img src="assets/images/facility.jpg" alt="Facility Management" />
                     <div class="service-content">
@@ -239,7 +232,6 @@
                     </div>
                 </div>
 
-                <!-- Food -->
                 <div class="service-card" data-aos="zoom-in">
                     <img src="assets/images/food.jpg" alt="Food Services" />
                     <div class="service-content">
@@ -251,7 +243,6 @@
                     </div>
                 </div>
 
-                <!-- Technical -->
                 <div class="service-card" data-aos="zoom-in">
                     <img src="assets/images/technical-services.jpg" alt="Technical Services" />
                     <div class="service-content">
@@ -438,9 +429,7 @@
 
                     <textarea name="message" placeholder="Your Message" required></textarea>
 
-                    <button type="submit" class="primary-btn">
-                        Send Enquiry
-                    </button>
+                    <button type="submit" class="primary-btn">Send Enquiry</button>
                 </form>
             </div>
         </div>
@@ -457,15 +446,15 @@
                 </p>
 
                 <div class="footer-social">
-                    <a href="https://www.linkedin.com/company/trident-multi-management-private-limited-tmmpl/about/?viewAsMember=true" target="_blank" title="LinkedIn">
+                    <a href="https://www.linkedin.com/company/trident-multi-management-private-limited-tmmpl/about/?viewAsMember=true" target="_blank" title="LinkedIn" rel="noopener noreferrer">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
 
-                    <a href="https://www.facebook.com/share/18iFb3y87b/?mibextid=wwXIfr" target="_blank" title="Facebook">
+                    <a href="https://www.facebook.com/share/18iFb3y87b/?mibextid=wwXIfr" target="_blank" title="Facebook" rel="noopener noreferrer">
                         <i class="fab fa-facebook-f"></i>
                     </a>
 
-                    <a href="https://wa.me/919755040808" target="_blank" title="WhatsApp">
+                    <a href="https://wa.me/919755040808" target="_blank" title="WhatsApp" rel="noopener noreferrer">
                         <i class="fab fa-whatsapp"></i>
                     </a>
 
